@@ -21,7 +21,7 @@ const handleInputChange=(e)=>{
 
 
   const correctedwords = words.map((word)=>{
-    const correctword = customDictionary[word];
+    const correctword = customDictionary[word.toLowerCase()];
     return correctword || word;
   })
 
